@@ -33,8 +33,6 @@ for( let index = 0; index < 10 ; index++){
         coolCounter.increase( print3rdSum );
 }
 
-
-
 // coolCounter.increase();
 // coolCounter.increase();
 // coolCounter.increase();
