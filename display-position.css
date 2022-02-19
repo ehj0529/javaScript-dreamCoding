@@ -1,0 +1,43 @@
+
+
+div, span {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    
+  }
+  /*display inline은 라인 형태 인라인 블럭은 인라인속성의 블럭 display*/
+  div {
+    background: red;
+    display: inline-block;
+  }
+  
+  /*span은 inline 속성이나 display에서 강제로 블럭으로 지정이 가능함.*/
+  span {
+    background: blue;
+    display: block;
+  }
+
+  /***************************************************/
+  div, span {
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    background: red; 
+  }
+  
+  .container {
+    background: yellow;
+    left: 20px;
+    top: 20px;
+    position: relative; /*원래 있어야 되는 위치에서 포지션이 적용됨*/
+  }
+  
+  .box {
+    background: blue;
+    left: 20px;
+    top: 20px;
+   /* position: fixed; /* page상에서 지정된 포지션으로 변경됨 */
+   /* position: sticky; /* 스크롤이 발생되어도 현재 페이지의 지정된 포지션으로 고정됨 */
+   position: absolute; /* 내가 담겨있는 상자안에서  지정된 포지션으로 지정됨 */
+  }

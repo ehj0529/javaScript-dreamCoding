@@ -1,0 +1,53 @@
+/*  CSS reference 에서 확인 할수 있음
+selector{
+ property: value; 
+}
+*/
+/*전체를 대상으로 변경*/
+* {
+    color: green;
+  }
+  /*엘리먼트 기준으로 적용*/
+  li {
+    color: blue;
+  }
+  /*엘리먼트중 해당 ID를 대상으로 변경*/
+  li#special {
+    color: red;
+  }  
+  /*ID를 대상으로 변경*/
+  #special {
+    color: red;
+  }
+  
+  /*class를 대상으로 변경*/
+  .red{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+  }
+  
+  .red{
+    width: 100px;
+    height: 100px;
+    padding: 20px;  /*컨텐츠 안에 적용됨*/
+    margin: 20px;  /* 컨텐츠 바깥에 적용됨*/
+    border: 2px dashed red; /*조건을 모두 적용할수 있음 width style color 순서임.*/
+    background: yellow;
+  }
+  
+
+
+  button:hover{
+    color: red;
+    background: gray;
+  }
+
+  /*네이버하이퍼링크 컬러 변경*/
+  a[href="naver.com"]{
+    color: purple;
+  }
+  /* '^': 시작체크 '$': 끝문구체크 */
+  a[href^="naver.com"]{
+    color: purple;
+  }
